@@ -4,16 +4,18 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    public static double calculatePercievedProprtion(double focalLength, double censorSize) {
+    // private static double calcImageSizeOnSensor(double focalLength, double censorSize) {
+    //     static double effectiveFocalLength = focalLength
 
-
-
-
-    }
+    // }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int integerChoice = 0;
+
+        // Subject variables
+        double subjectSize = 0.0 // in inches
+        double subjectDistance
 
         // Determine frame size
         final CensorSizes censorSizeInformation = new CensorSizes();
@@ -38,7 +40,24 @@ public class Main {
             "Selected: " + availableFrames.get(integerChoice - 1)
         );
 
-        System.out.println()
+        System.out.println("Enter the size of the object in inches (to the best of your ability)");
+        System.out.print("\n:> ");
+
+        try {
+            integerChoice = input.nextLine();
+        } catch (Exception e) {
+            System.out.print("Error caught: " + e);
+        }
+
+        System.out.println("Enter the approximate distance from the sensor to the subject");
+        System.out.print("\n:> ");
+
+        try {
+            integerChoice = input.nextLine;
+        } catch (Exception e) {
+            System.out.print("Error caught: " + e);
+        }
+
 
         // Program end
         input.close();
