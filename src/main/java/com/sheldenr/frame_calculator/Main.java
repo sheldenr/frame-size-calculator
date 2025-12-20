@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
+    public static double calculatePercievedProprtion(double focalLength, double censorSize) {
+
+
+
+
+    }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -31,6 +37,8 @@ public class Main {
         System.out.println(
             "Selected: " + availableFrames.get(integerChoice - 1)
         );
+
+        System.out.println()
 
         // Program end
         input.close();
